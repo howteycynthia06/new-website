@@ -77,3 +77,89 @@ footer p{
   padding-top: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #D7B98E; /* court wood */
+  color: #2b2b2b;
+}
+
+/* Header */
+header {
+  background-color: #F15A24; /* basketball orange */
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  border-bottom: 8px solid #3B2F2F; /* court wood border */
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #3B2F2F;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 30px;
+}
+
+/* Basketball Button */
+button,
+.cta {
+  background-color: #F15A24;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* Card (for player stats, news, etc.) */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-left: 6px solid #F15A24;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
