@@ -1,26 +1,27 @@
-function startGame() {
-  // 1️⃣ User input: player name
-  let playerName = prompt("What’s your name, baller?");
-  document.getElementById("intro").textContent =
-    "Welcome to the court, " + playerName + "!";
+'use strict'
 
-  // 2️⃣ confirm() + conditional logic
-  let playsBasketball = confirm("Do you play basketball?");
+function yourName() {
+    let name = prompt('What is your name?');
 
-  if (playsBasketball) {
-    document.getElementById("court").textContent =
-      "You’re a hooper! 🏀🔥";
-  } else {
-    document.getElementById("court").textContent =
-      "You’re still welcome on the court!";
-  }
+    return document.write(name);
+}
 
-  // 3️⃣ Stretch goal: change court color
-  let teamColor = prompt(
-    "What’s your team color? (red, blue, #FFA500, etc.)"
-  );
+function timeOfDay() {
+    let time = prompt('What hour is it? (0-23)'); // 15;
+    let message = '';
 
-  document.getElementById("court").style.backgroundColor = teamColor;
+    if (time <= 11) {
+        message = 'Good Morning!';
+    } else if (time <= 18) {
+        message = 'Good Afternoon!';
+    } else if (time < 24) {
+        message = "Good Evening!";
+    } else {
+        message = "That hour does not exist!";
+    }
+
+    return message;
+}
 }
 
 
